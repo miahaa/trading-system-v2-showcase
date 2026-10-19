@@ -1,0 +1,44 @@
+{
+  "version": "2.0",
+  "snapshot_scope": "Historical snapshot audited 2026-10-13; not a statement about later revisions",
+  "rows": [
+    {
+      "label": "Audited legacy replay",
+      "start": "2026-01-02",
+      "end": "2026-10-01",
+      "test_type": "Historical minute-bar simulation",
+      "net_usd": 7613.2,
+      "max_drawdown_usd": 1452.4,
+      "trade_count": 118,
+      "win_rate_pct": 51.69,
+      "profit_factor": 1.68
+    },
+    {
+      "label": "Causal-calendar sensitivity",
+      "start": "2026-01-02",
+      "end": "2026-10-01",
+      "test_type": "Historical minute-bar simulation",
+      "net_usd": 7336.8,
+      "max_drawdown_usd": 1452.4,
+      "trade_count": 117,
+      "win_rate_pct": 51.28,
+      "profit_factor": 1.65
+    },
+    {
+      "label": "Causal + execution stress",
+      "start": "2026-01-02",
+      "end": "2026-10-01",
+      "test_type": "Historical minute-bar simulation",
+      "net_usd": 7008.8,
+      "max_drawdown_usd": 1510.4,
+      "trade_count": 117,
+      "win_rate_pct": 51.28,
+      "profit_factor": 1.62
+    }
+  ],
+  "live_results_published": false,
+  "equity_curve_published": false,
+  "verification": "Checked against preserved audit report and JSON; no fresh replay performed for this showcase",
+  "drawdown_definition": "Prior end-of-day equity peak minus adverse intraday marked equity; maximum over the replay",
+  "methodology": "See README.md for effective transaction costs and limitations"
+}
